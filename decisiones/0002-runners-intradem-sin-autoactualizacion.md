@@ -45,9 +45,9 @@ actualizaciones críticas de seguridad puede dejar de enviarlos antes
 Por eso, cada vez que [actions/runner](https://github.com/actions/runner/releases) publica
 una versión, hay que subir el tag de la imagen antes de 30 días.
 
-> **Pendiente al escribir esto:** GitHub publicó la **v2.338.1 el 2026-10-22** y ya existe
-> la imagen `myoung34/github-runner:2.338.1-ubuntu-noble`. Plazo para cambiarla:
-> **2026-11-21**.
+> **Versión actual:** `myoung34/github-runner:2.338.1-ubuntu-noble`, aplicada el
+> 2026-10-22. La v2.338.1 se publicó ese mismo día. El plazo de 30 días corre
+> desde la próxima versión que publique GitHub.
 
 Si se olvida, el síntoma es que los trabajos de CI quedan en cola sin que ningún runner los
 tome, aunque los runners aparezcan online.
@@ -71,3 +71,5 @@ tome, aunque los runners aparezcan online.
 
 - **2026-10-22:** caída del CI de 14:32 a 17:18 UTC. Fijados en 2.338.0. Más tarde se
   agregó `DISABLE_AUTO_UPDATE` y se reinició con los 6 runners libres; los 6 quedaron online.
+- **2026-10-22:** subidos a 2.338.1 con el procedimiento de arriba (reinicio a las 19:50 UTC,
+  con los 6 libres). Los 6 quedaron online, en `2.338.1` y con la autoactualización desactivada.
